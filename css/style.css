@@ -1,0 +1,161 @@
+body {
+    background-color: #2f2f33;
+}
+.entryBody {
+    background-color: black;
+}
+
+.entryImage img{
+    position: inherit;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.fixedBox {
+    position: fixed;
+    top: 50px;
+    left: 660px;
+    width: 300px;
+    border-width: 6px;
+    border-style: outset;
+    border-color: green;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 18pt;
+    color: azure;
+}
+
+
+.leftSideContent {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 300px;
+    width: 240px;
+    padding:10px;
+    background-color: #2F2F33FF;
+    color: #ffffff;
+    min-height: 100%;
+}
+.leftSideContent b, p, li, ul {
+    padding-left: 18px;
+    font-size: 18px;
+}
+.leftSideContent a:link{
+    color: #069364;
+}
+.leftSideContent a:visited{
+    color: #014f56;
+}
+
+.middleContent{
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #0d654a;
+    padding: 300px;
+    min-height: 600px;
+    background-color: #2F2F33FF;
+}
+.middleContent p{
+    text-align: justify;
+    margin: 20px;
+
+}
+.middleContent img{
+    float: right ;
+    margin: 20px;
+}
+.rightSideContent {
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    top: 300px;
+    width: 240px;
+    padding: 10px;
+    background-color: #2F2F33FF;
+    color: #ffffff;
+    min-height: 100%;
+}
+.rightSideContent li{
+    list-style: square;
+}
+.rightSideContent a:link{
+    color: #069364;
+}
+.rightSideContent a:visited{
+    color: #014f56;
+}
+
+.header-image {
+    z-index: 1;
+    position: fixed;
+    background-image: url("/images/entrypic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1600px;
+    height: 300px;
+    background-position: center;
+    left: 0;
+    top: 0;
+}
+.header-image h1{
+    padding-top: 40px;
+    padding-left: 500px;
+}
+
+.content ul, li{
+    list-style: none ;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.image-column {
+  flex: 25%;
+  max-width: 40%;
+  padding: 0 4px;
+}
+
+.image-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .image-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .image-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.PortfolioContent{
+    margin-left: 10px;
+    margin-right: 150px;
+    color: #0d654a;
+    padding-top: 300px;
+    min-height: 600px;
+    background-color: #2F2F33FF;
+}
+.PortfolioContent p{
+    text-align: justify;
+    margin: 20px;
+
+}
+.PortfolioContent img{
+    float: right ;
+    margin: 20px;
+}
