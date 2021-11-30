@@ -4,21 +4,134 @@
     <meta charset="UTF-8">
     <title>About Me</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <script>
+    function foo()
+    {
+        var e = document.contactForm.fullname.value + '\n' + document.contactForm.email.value
+        e = e + '\n\n' + document.contactForm.subject.value + '\n'
+
+    var p =""
+        switch(document.contactForm.priority.value)
+        {
+            case "none":
+                p ="No priority selected..."
+                break
+            case "urgent":
+                p ="URGENT: Must be serious!"
+                break
+            case "high":
+                p = "Pretty darn IMPORTANT!"
+                break
+            case "medium":
+                p = "Kind of important."
+                break
+            case "low":
+                p = "Not important at all."
+                break
+            case "spam":
+                p = "Once you've read all your spam..."
+                break
+        }
+        e = e + "priority: " + p + "\n\n" + document.contactForm.message.value
+
+        document.contactForm.sentMessage.value = e
+    }
+    </script>
 </head>
 <body>
     <div class="header-image">
         <h1>Contact Me</h1>
         </div>
 
-    <div class="leftSideContent"></div>
-    <div class="middleContent">
-        <h2>Contact Me</h2>
-        <p style="font-size: 14pt">
-            If you would like to get in contact with me, feel free to email me @ <a href="mailto:jessegraham@usf.edu" target="_blank">jessegraham@usf.edu</a>
-        </p>
-            <img src="images/IMG_1926.jpg" width="600" height="auto" alt="Horseshoe Bend in Arizona">
+    <div class="reflections">
+        <form name="contactForm">
+        <table>
 
+        <tr>
+            <th colspan="2"><h1>Contact Me</h1></th>
+        </tr>
+
+        <tr>
+            <td>Fullname: </td>
+            <td><label>
+                <input type="text" size="40" name="fullname">
+            </label></td>
+        </tr>
+
+        <tr>
+            <td>E-mail address: </td>
+            <td><label>
+                <input type="text" size="40" name="email" >
+            </label></td>
+        </tr>
+
+        <tr>
+        <td>Subject: </td> <td><label>
+            <input type="text" size="40" name="subject" >
+        </label></td>
+        </tr>
+
+        <tr>
+        <td>Priority: </td>
+
+        <td>
+            <label for="priority"></label>
+            <select name="Priority" id="priority">
+            <option value="none">..Choose a priority..</option>
+            <option value="urgent">URGENT!</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+            <option value="spam">Read after reading spams!</option>
+        </select>
+        </td>
+        </tr>
+
+        <tr>
+        <td>Message: </td> <td><label>
+            <textarea name="message" rows="4" cols="40"></textarea>
+        </label></td>
+        </tr>
+
+        <tr>
+            <td><input type="reset" value="Clear Form"></td>
+            <td><input type="button" value="Send Message" onclick="foo()"></td>
+        </tr>
+
+        <tr> <td></td>
+        </tr>
+
+        <tr>
+        <th colspan="2"><h2>If your message passes inspection, it will be displayed below:</h2></th>
+        </tr>
+
+            <tr>
+        <td>Message Sent:</td>
+        <td><label>
+            <textarea name="sentMessage" rows="12" cols="40" readonly></textarea>
+        </label></td>
+        </tr>
+        </table>
+        </form>
     </div>
-    <div class="rightSideContent"></div>
+
+    <div class="reflections-sidebar">
+        <br><br>
+        <p>You can also use the info below to contact me</p>
+        <hr>
+        <table border="1">
+            <tr><td colspan="2"><h3>Jesse Graham</h3></td></tr>
+            <tr>
+                <td>Email: </td>
+                <td><a href="mailto:jessegraham@usf.edu" target="_blank">jessegraham@usf.edu</a></td>
+            </tr>
+            <tr>
+                <td>Phone: </td>
+                <td>704.964.2424</td>
+            </tr>
+        </table>
+        <img src="images/IMG_1999.jpg" width="260px" height="auto" alt="Valley of Fire">
+    </div>
 </body>
 </html>

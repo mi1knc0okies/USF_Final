@@ -68,8 +68,7 @@ body {
 
 }
 .middleContent img{
-    float: right ;
-    margin: 20px;
+    margin: 40px;
 }
 .rightSideContent {
     z-index: 0;
@@ -152,6 +151,7 @@ body {
     margin-right: 150px;
     color: #0d654a;
     padding-top: 300px;
+    padding-right: 140px;
     min-height: 600px;
     background-color: #040303;
 }
