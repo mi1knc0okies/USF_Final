@@ -1,8 +1,8 @@
 body {
-    background-color: #2f2f33;
+    background-color: #040303;
 }
 .entryBody {
-    background-color: black;
+    background-color: #040303;
 }
 
 .entryImage img{
@@ -35,7 +35,7 @@ body {
     top: 300px;
     width: 240px;
     padding:10px;
-    background-color: #2F2F33FF;
+    background-color: #040303;
     color: #ffffff;
     min-height: 100%;
 }
@@ -47,17 +47,21 @@ body {
     color: #069364;
 }
 .leftSideContent a:visited{
-    color: #014f56;
+    color: #FD151B;
 }
 
 .middleContent{
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 60px;
     color: #0d654a;
     padding: 300px;
     min-height: 600px;
-    background-color: #2F2F33FF;
+    background-color: #040303;
 }
+.middleContent h3, a {
+    color: #BEB0A7;
+}
+
 .middleContent p{
     text-align: justify;
     margin: 20px;
@@ -74,8 +78,8 @@ body {
     top: 300px;
     width: 240px;
     padding: 10px;
-    background-color: #2F2F33FF;
-    color: #ffffff;
+    background-color: #040303;
+    color: #f3b314;
     min-height: 100%;
 }
 .rightSideContent li{
@@ -85,7 +89,7 @@ body {
     color: #069364;
 }
 .rightSideContent a:visited{
-    color: #014f56;
+    color: #FD151B;
 }
 
 .header-image {
@@ -101,8 +105,9 @@ body {
     top: 0;
 }
 .header-image h1{
-    padding-top: 40px;
-    padding-left: 500px;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: azure;
 }
 
 .content ul, li{
@@ -148,14 +153,45 @@ body {
     color: #0d654a;
     padding-top: 300px;
     min-height: 600px;
-    background-color: #2F2F33FF;
+    background-color: #040303;
 }
 .PortfolioContent p{
     text-align: justify;
     margin: 20px;
-
 }
 .PortfolioContent img{
     float: right ;
     margin: 20px;
+}
+.reflections {
+    margin-left: 10px;
+    margin-right: 150px;
+    color: #0d654a;
+    padding-top: 300px;
+    padding-right: 200px;
+    min-height: 600px;
+    background-color: #040303;
+}
+.reflections a, h3{
+    color: #BEB0A7;
+}
+.reflections-sidebar {
+    z-index: 0;
+    position: fixed;
+    right: 40px;
+    top: 300px;
+    width: 240px;
+    padding: 10px;
+    background-color: #040303;
+    color: #f3b314;
+    min-height: 100%;
+}
+.reflections-sidebar li{
+    list-style: square;
+}
+.reflections-sidebar a:link{
+    color: #069364;
+}
+.reflections-sidebar a:visited{
+    color: #FD151B;
 }
